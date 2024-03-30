@@ -147,6 +147,12 @@ export async function fetchRatesForCurrency(
   currency: Currency,
   date: Date = new Date()
 ): Promise<CurrencyData> {
+  if (!currency) throw new Error("Currency is required");
+
+  if (!currencyList.includes(currency)) {
+    throw new Error("Unsupported currency");
+  }
+
   const formattedDate = date.toISOString().split("T")[0];
   const url = `${BASE_URL}/${lang}/json/?currencies=${currency}&date=${formattedDate}`;
   return fetchCurrencyData(url);
