@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/main.yml/badge.svg)](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/main.yml)
 
+[![Publish](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/npm-publish.yml)
+
 An API wrapper around `nbg.gov.ge` for fetching the National Bank of Georgia's currency rates. This package simplifies the process of retrieving currency exchange rates and provides an easy-to-use interface for developers.
 
 ## Features
