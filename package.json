@@ -7,11 +7,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify",
+    "release": "pnpm run build && changeset publish",
     "lint": "tsc",
-    "changeset": "changeset",
-    "prepublishOnly": "npm run build",
-    "preinstall": "npx only-allow pnpm",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx only-allow pnpm"
   },
   "repository": {
     "type": "git",
