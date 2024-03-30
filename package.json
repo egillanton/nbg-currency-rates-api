@@ -1,6 +1,6 @@
 {
   "name": "nbg-currency-rates-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An API wrapper around nbg.gov.ge for fetching National Bank of Georgia currency rates",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
