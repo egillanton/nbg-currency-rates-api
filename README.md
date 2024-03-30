@@ -5,6 +5,7 @@
 [![Publish](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/egillanton/nbg-currency-rates-api/actions/workflows/npm-publish.yml)
 
 An API wrapper around `nbg.gov.ge` for fetching the National Bank of Georgia's currency rates. This package simplifies the process of retrieving currency exchange rates and provides an easy-to-use interface for developers.
+TypeScript support is included.
 
 ## Features
 
@@ -20,10 +21,16 @@ Install via npm:
 npm install nbg-currency-rates-api
 ```
 
-or via yarn:
+via yarn:
 
 ```bash
 yarn add nbg-currency-rates-api
+```
+
+or via pnpm:
+
+```bash
+pnpm add nbg-currency-rates-api
 ```
 
 ## Usage
@@ -41,6 +48,8 @@ const { fetchAllRates, fetchRatesForCurrency, setDefaultLanguage } = require('nb
 ```
 
 ## Setting the Default Language
+
+The default language for API responses is English. You can change it to Georgian by calling the `setDefaultLanguage` function:
 
 ```typescript
 // Set to Georgian
@@ -76,6 +85,19 @@ Fetches specific currency rates for a given date.
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
+
+The preferred package manager for this project is `pnpm`. If you don't have it installed, you can do so by running:
+```bash
+npm install -g pnpm
+```
+
+
+Please use changesets before your pull request.
+```bash
+pnpm changeset
+```
+
+```bash
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
