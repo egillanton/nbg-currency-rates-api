@@ -1,0 +1,36 @@
+{
+  "name": "nbg-currency-rates-api",
+  "version": "1.0.0",
+  "description": "An API wrapper around nbg.gov.ge for fetching National Bank of Georgia currency rates",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egillanton/nbg-currency-rates-api.git"
+  },
+  "keywords": [
+    "NBG",
+    "currency",
+    "exchange rates",
+    "Georgia"
+  ],
+  "author": "Egill Anton Hlöðversson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egillanton/nbg-currency-rates-api/issues"
+  },
+  "homepage": "https://github.com/egillanton/nbg-currency-rates-api#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@types/node-fetch": "^2.6.11",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
