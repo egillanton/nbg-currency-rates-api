@@ -113,7 +113,7 @@ async function fetchCurrencyData(url: string): Promise<CurrencyData> {
     (await response.json()) as CurrencyRateApiResponse;
 
   // Transforming API response to strongly typed structure
-  const firstItem = data[0];
+  const firstItem = data[0] as CurrencyRateApiResponseItem;
   return {
     date: new Date(firstItem.date),
     currencies: firstItem.currencies.map((currency) => ({
