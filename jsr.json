@@ -1,5 +1,5 @@
 {
 	"name": "@egilanton/nbg-currency-rates-api",
 	"version": "0.0.2",
-	"exports": "./mod.ts"
-  }
+	"exports": "./src/mod.ts"
+}
