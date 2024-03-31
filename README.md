@@ -91,13 +91,10 @@ The preferred package manager for this project is `pnpm`. If you don't have it i
 npm install -g pnpm
 ```
 
-
 Please use changesets before your pull request.
 ```bash
 pnpm changeset
 ```
-
-```bash
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
